@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
 public class MorningRushTester
 {   
     private static final int DELAY = 1000;
-    static final int initialGulps = 5;
+
 
     public MorningRushTester()
     {
@@ -16,6 +16,8 @@ public class MorningRushTester
     
     public static void main(String[] args)
     {
+        final int initialGulps = 15;
+        
         class DrinkCoffee implements ActionListener
         {
             private int gulps;
@@ -45,8 +47,8 @@ public class MorningRushTester
         DrinkCoffee expresso = new DrinkCoffee(initialGulps);
         Timer t = new Timer(DELAY, expresso);
         t.start();
-        
-        JOptionPane.showMessageDialog(null, "Make another?");
+        JOptionPane.showMessageDialog(null, "Just about to go to school");
+        System.out.println("Just about to go to school");
         System.exit(0);
     }
 }
