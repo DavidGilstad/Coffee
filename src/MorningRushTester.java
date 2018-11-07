@@ -16,7 +16,7 @@ public class MorningRushTester
     
     public static void main(String[] args)
     {
-        final int initialGulps = 15;
+        final int initialGulps = 5;
         
         class DrinkCoffee implements ActionListener
         {
